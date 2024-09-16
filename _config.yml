@@ -1,70 +1,53 @@
-# Site settings
-title: KangHyeon Choe's blog
-email: bradamy@daum.net
-url: https://kh-choe.github.io/
-description: "KangHyeon Choe's blog"
-keywords: "quant, develop, math, financial engineering, data science"
-skills: "quant, develop, math, financial engineering, data science"
-meta_author: KangHyeon Choe
+title: example.com
+description: "Satellite - jekyll blog theme"
+logo_img: "/assets/img/favicon.webp"
+profile_img: "/assets/img/profile.webp"
 
-# Google webmaster tools
-google_verify:
+# Social Links
+email: example@gmail.com
+github_username: github
+twitter_username: twitter
+instagram_username: instagram
+linkedin_username: linkedin
+facebook_username: facebook
 
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+# External API
+giscus_repo: "byanko55/jekyll-theme-satellite"
+giscus_repoId: "R_kgDOJ6fqWg"
+giscus_category: "Q&A"
+giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
+goatcounter_code: byanko77
+google_analytics:
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: "#1A1A2E" # 어두운 네이비 (시크하고 차분한 느낌)
-  primary-rgb: "26,26,46" 
-  secondary: "#16213E" # 진한 블루 그레이 (고급스러운 계절감)
-  secondary-dark: "#0F3460" # 다크 네이비 (더 깊은 느낌)
-
-# Footer settings
-footer:
-  copyright: KangHyeon Choe
-  location: Seoul, Korea
-  social: Around the Web
-  credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: 
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: 
-  - title: linkedin
-    url: 
-  - title: github
-    url: https://github.com/KH-CHOE
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: DongDaeMun-Gu, Seoul, Korea
-
-# Credits content
-credits: 
+# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
+# Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
+baseurl:
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-loading-lazy
 
-#for posts
+exclude:
+  - docs/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path.html
+
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "posts"
+      type: "pages"
     values:
-      permalink: ""
+      layout: "page"
+      date: "1900-01-01"
+
+# Markdown newline activator 
+kramdown:
+  input: GFM
+  hard_wrap: true
