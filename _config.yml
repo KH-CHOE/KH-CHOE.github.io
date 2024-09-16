@@ -1,11 +1,11 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+title: KangHyeon Choe's blog
+email: bradamy@daum.net
+url: https://kh-choe.github.io/
+description: "KangHyeon Choe's blog"
+keywords: "quant, develop, math, financial engineering, data science"
+skills: "quant, develop, math, financial engineering, data science"
+meta_author: KangHyeon Choe
 
 # Google webmaster tools
 google_verify:
@@ -25,38 +25,37 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: "#1A1A2E" # 어두운 네이비 (시크하고 차분한 느낌)
+  primary-rgb: "26,26,46" 
+  secondary: "#16213E" # 진한 블루 그레이 (고급스러운 계절감)
+  secondary-dark: "#0F3460" # 다크 네이비 (더 깊은 느낌)
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
+  copyright: KangHyeon Choe
+  location: Seoul, Korea
   social: Around the Web
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: 
   - title: facebook
     url:
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: 
+  - title: linkedin
+    url: 
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/KH-CHOE
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: DongDaeMun-Gu, Seoul, Korea
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 
 
 # Build settings
 markdown: kramdown
