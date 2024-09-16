@@ -224,6 +224,8 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-sass:
-  load_paths:
-    - node_modules
+# _config file with Jekyll 4.0.0 (and newer)
+
+include:
+  - .htaccess
+  - node_modules
